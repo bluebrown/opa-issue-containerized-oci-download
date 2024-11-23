@@ -72,5 +72,5 @@ It runs succesfully in a container image.
 ```console
 $ docker build -t gist gist/
 $ docker run --rm --env-file .env gist
-2024/11/23 16:21:20 ok: copied 549 bytes: application/vnd.oci.image.manifest.v1+json
+2024/11/23 16:48:19 ok: copied 549 bytes: application/vnd.oci.image.manifest.v1+json
 ```
