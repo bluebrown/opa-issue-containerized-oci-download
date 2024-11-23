@@ -1,0 +1,18 @@
+---
+decision_logs:
+  console: true
+services:
+  acr:
+    url: ${ACR_URL}
+    type: oci
+    response_header_timeout_seconds: 60
+    tls:
+    credentials:
+      bearer:
+        scheme: Basic
+        token: ${ACR_TOKEN}
+bundles:
+  main:
+    service: acr
+    resource: ${ACR_BUNDLE}
+    persist: false
